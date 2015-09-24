@@ -34,7 +34,15 @@ class First extends Application {
         $this->data['what'] = $source['what'];
         $this->data['who'] = $source['who'];
         $this->data['mug'] = $source['mug'];
-
+        $this->render();
+    }
+    function gimmie($which) {
+        $this->data['pagebody'] = 'justone';    // this is the view we want shown
+        // build the list of authors, to pass on to our view
+        $source = $this->quotes->get($which);
+        $this->data['what'] = $source['what'];
+        $this->data['who'] = $source['who'];
+        $this->data['mug'] = $source['mug'];
         $this->render();
     }
 
