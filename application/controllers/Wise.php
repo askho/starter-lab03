@@ -30,5 +30,5 @@ class Wise extends Application {
 
 }
 
-/* End of file Welcome.php */
-/* Location: application/controllers/Welcome.php */
+/* End of file Wise.php */
+/* Location: application/controllers/Wise.php */
