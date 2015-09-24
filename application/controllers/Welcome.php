@@ -30,6 +30,16 @@ class Welcome extends Application {
 
         $this->render();
     }
+    function shucks() {
+        $this->data['pagebody'] = 'justone';    // this is the view we want shown
+        // build the list of authors, to pass on to our view
+        $source = $this->quotes->get(2);
+        $this->data['what'] = $source['what'];
+        $this->data['who'] = $source['who'];
+        $this->data['mug'] = $source['mug'];
+
+        $this->render();
+    }
 
 }
 

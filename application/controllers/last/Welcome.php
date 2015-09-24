@@ -27,5 +27,4 @@ class Welcome extends Application {
         $this->data['mug'] = $source['mug'];
         $this->render();
     }
-
 }
